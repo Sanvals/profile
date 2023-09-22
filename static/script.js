@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "python": "https://img.shields.io/badge/Python-%23282c34?logo=python&logoColor=%20%23f6f7f8",
         "selenium": "https://img.shields.io/badge/Python-%23282c34?logo=python&logoColor=%20%23f6f7f8",
         "sql": "https://img.shields.io/badge/MySQL-%23282c34?logo=mysql&logoColor=%20%23f6f7f8",
+        "django": "https://img.shields.io/badge/Django-%23282c34?logo=django&logoColor=%20%23f6f7f8",
         "discord": "https://img.shields.io/badge/Discord-%23282c34?logo=discord&logoColor=%20%23f6f7f8",
         "beautifulsoup": "https://img.shields.io/badge/BeautifulSoup-%23282c34?logo=beautifulsoup&logoColor=%20%23f6f7f8",
     }
@@ -27,6 +28,16 @@ document.addEventListener("DOMContentLoaded", () => {
             const img = document.createElement("img");
             img.src = badge[tech];
             badgesArea.appendChild(img);
+        })
+    })
+
+
+    filterButtons[0].classList.add("active");
+
+    filterButtons.forEach(b => {
+        b.addEventListener("click", () => {
+            filterButtons.forEach(b => b.classList.remove("active"));
+            b.classList.contains("active") ? b.classList.remove("active") : b.classList.add("active");
         })
     })
 })

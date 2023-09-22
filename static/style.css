@@ -86,6 +86,7 @@ body {
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 500px;
 }
 
 #search {
@@ -119,6 +120,7 @@ body {
     overflow: hidden;
     position: relative;
     transition: opacity 0.3s ease;
+    transition: color 0.3 ease;
 
     .overlay {
         padding: 1rem;
@@ -136,7 +138,7 @@ body {
 
     .overlay:hover {
         opacity: 1;
-        background-color: rgba(var(--primary-color), 100);
+        background-color: rgba(24, 24, 24, 0.405);
         backdrop-filter: blur(1rem);
     }
 
@@ -164,8 +166,6 @@ body {
         flex-wrap: wrap;
         gap: 10px;
     }
-
-    
 }
 
 .hidden {
