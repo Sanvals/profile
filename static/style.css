@@ -22,51 +22,52 @@ body {
 #hero {
     margin: auto;
     margin-top: 20vh;
-}
 
-#profile-img img {
-    border-radius: 50%;
-    width: 120px;
-    height: auto;
-    border-style: solid;
-    border-width: 2px;
-    border-color: var(--secondary-color);
-}
-
-#title {
-    margin: auto;
-    font-weight: 530;
-    font-size: 40px;
-}
-
-#subtitle {
-    font-weight: 500;
-    font-size: 16px;
-    color: #f6f7f89c
-}
-
-#icons-area {
-    margin: auto;
-    margin-top: 10px;
-    font-size: 24px;
-    width: 180px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-
-    a:nth-child(5) svg {
-        width: 23px;
-    }
-    
-    svg {
-        fill: var(--tertiary-color);
-        width: 27px;
+    img {
+        border-radius: 50%;
+        width: 120px;
         height: auto;
-        transition: fill 0.3s ease;
+        border-style: solid;
+        border-width: 2px;
+        border-color: var(--secondary-color);
     }
 
-    svg:hover {
-        fill: var(--secondary-color);
+    h1 {
+        margin: auto;
+        font-weight: 530;
+        font-size: 40px;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 16px;
+        color: #f6f7f89c;
+        margin: 0;
+    }
+
+    #icons-area {
+        margin: auto;
+        margin-top: 10px;
+        font-size: 24px;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    
+        a:nth-child(5) svg {
+            width: 23px;
+        }
+        
+        svg {
+            fill: var(--tertiary-color);
+            width: 27px;
+            height: auto;
+            transition: fill 0.3s ease;
+        }
+    
+        svg:hover {
+            fill: var(--secondary-color);
+        }
     }
 }
 
@@ -88,25 +89,23 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 500px;
+    justify-content: center;
 }
 
 #search {
-    cursor: default;
-    width: 100%;
-    margin-bottom: 1em;
-    background-color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    list-style-type: none;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    gap: 20px;
 
-    .search {
+    li {
+        display: inline-block;
         color: var(--tertiary-color);
         transition: color 0.3s ease;
     }
 
-    .search:hover {
+    li:hover {
         color: var(--secondary-color);
-        cursor: pointer;
     }
 
     .active {

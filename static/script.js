@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const techs = c.dataset.tech.split(" ");
         const overlay = c.querySelector(".overlay");
 
-        const badgesArea = document.createElement("div");
+        const badgesArea = document.createElement("footer");
         badgesArea.classList.add("badges");
         overlay.appendChild(badgesArea);
         
